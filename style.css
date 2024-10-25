@@ -34,6 +34,10 @@ p, h1, h2, h3, h4, h5, h6 {
   --footer-background-color: rgb(31 41 55 / 0.3);
 }
 
+body {
+  background-color: var(--body-background-color);
+}
+
 .nav-elements-container {
   display: flex;
   padding: 0.5rem 5rem;
