@@ -69,9 +69,16 @@ nav {
 .nav-elements-container .left-nav a {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: norse-bold, Inter, system-ui;
   font-size: 2rem;
   color: var(--text-color);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+span {
+  text-align: center;
 }
 
 .nav-elements-container .left-nav a img {
@@ -81,6 +88,12 @@ nav {
 
 .nav-elements-container .right-nav {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-elements-container .right-nav p {
+  text-align: center;
 }
