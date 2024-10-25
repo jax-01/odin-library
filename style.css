@@ -59,3 +59,9 @@ nav {
   height: 5rem;
   width: auto;
 }
+
+.nav-elements-container .right-nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
