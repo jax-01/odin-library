@@ -71,7 +71,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-family: norse-bold, Inter, system-ui;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--text-color);
   gap: 1rem;
   flex-wrap: wrap;
