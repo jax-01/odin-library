@@ -26,6 +26,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* CSS Reset rules above */
 
+:root {
+  --text-color: rgb(229 231 235);
+  --button-background-color: rgb(15 118 110);
+  
+  --body-background-color: rgb(17 24 39);
+  --footer-background-color: rgb(31 41 55 / 0.3);
+}
+
 .nav-elements-container {
   display: flex;
   padding: 0.5rem 5rem;
