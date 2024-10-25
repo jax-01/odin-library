@@ -36,6 +36,11 @@ ul {
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@font-face {
+  font-family: norse-bold;
+  src: url(./font/Norse-Bold.otf);
+}
+
 :root {
   --text-color: rgb(229 231 235);
   --button-background-color: rgb(15 118 110);
@@ -64,10 +69,13 @@ nav {
 .nav-elements-container .left-nav a {
   display: flex;
   align-items: center;
+  font-family: norse-bold, Inter, system-ui;
+  font-size: 2rem;
+  color: var(--text-color);
 }
 
 .nav-elements-container .left-nav a img {
-  height: 5rem;
+  height: 4rem;
   width: auto;
 }
 
