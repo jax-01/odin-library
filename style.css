@@ -97,3 +97,11 @@ span {
 .nav-elements-container .right-nav p {
   text-align: center;
 }
+
+/* Button container */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
