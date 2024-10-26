@@ -105,3 +105,17 @@ span {
   justify-content: center;
   margin: 25px;
 }
+
+.button-container button {
+  background-color: var(--button-background-color);
+  border: 2px solid var(--button-background-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 4rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.button-container button:hover {
+  cursor: pointer;
+  box-shadow: 0.35rem 0.35rem var(--bottom-border-color);
+}
