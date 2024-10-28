@@ -2,8 +2,11 @@
 const myLibrary = [];
 
 // constructor function for books
-function Book() {
-  
+function Book(title, author, pages, readStatus) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.readStatus = readStatus;
 }
 
 // add books to storage
