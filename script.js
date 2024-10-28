@@ -17,7 +17,7 @@ function addBookToLibrary(title, author, pages, readStatus) {
 
 // displaying books from storage
 function displayBooks() {
-  const container = document.querySelector(".books-container");
+  const booksContainer = document.querySelector(".books-container");
 
     // for each element inside myLibrary create a book display
     myLibrary.forEach((book, index) => {
@@ -38,5 +38,13 @@ function displayBooks() {
       readStatus.textContent = "Status: " + `${book.readStatus ? "Read" : "Not read yet"}`;
       changeStatusButton.textContent = "Change Status";
       deleteBookButton.textContent = "Delete Book";
+
+      bookElement.appendChild(title);
+      bookElement.appendChild(author);
+      bookElement.appendChild(pages);
+      bookElement.appendChild(readStatus);
+      bookElement.appendChild(changeStatusButton);
+      bookElement.appendChild(deleteBookButton);
+      booksContainer.appendChild(bookElement);
     });
 }
