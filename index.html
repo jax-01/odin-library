@@ -28,6 +28,29 @@
   <div class="button-container">
     <button>New Book</button>
   </div>
+  <dialog id="new-book-modal">
+    <form>
+      <div class="form-row">
+        <label for="book-title">Book title</label>
+        <input type="text" name="book-title" id="book-title" required>
+      </div>
+      <div class="form-row">
+        <label for="book-author">Book author</label>
+        <input type="text" name="book-author" id="book-author" required>
+      </div>
+      <div class="form-row">
+        <label for="book-pages">Number of pages</label>
+        <input type="number" name="book-pages" id="book-pages" min="1" required>
+      </div>
+      <fieldset>
+        <label for="read-status">Read</label>
+        <input type="checkbox" name="read-status" id="read-status" required>
+      </fieldset>
+      <div class="form-row button-container">
+        <button type="submit" class="add-book">Add book</button>
+      </div>
+    </form>
+  </dialog>
   <div class="books-container">
 
   </div>
