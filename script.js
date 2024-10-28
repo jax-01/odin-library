@@ -9,8 +9,13 @@ function Book(title, author, pages, readStatus) {
   this.readStatus = readStatus;
 }
 
-// add books to storage
+// adding books to storage
 function addBookToLibrary(title, author, pages, readStatus) {
   const book = new Book(title, author, pages, readStatus);
   myLibrary.push(book);
+}
+
+// displaying books from storage
+function displayBooks() {
+
 }
