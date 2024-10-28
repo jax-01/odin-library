@@ -44,6 +44,7 @@ ul {
 :root {
   --text-color: rgb(229 231 235);
   --button-background-color: rgb(15 118 110);
+  --button-hover-color: rgb(12, 90, 84);
   --bottom-border-color: rgb(31 41 55);
   --body-background-color: rgb(17 24 39);
   --footer-background-color: rgb(31 41 55 / 0.3);
@@ -117,5 +118,6 @@ span {
 
 .button-container button:hover {
   cursor: pointer;
-  box-shadow: 0.35rem 0.35rem var(--bottom-border-color);
+  background-color: var(--button-hover-color);
+  border-color: var(--button-hover-color);
 }
