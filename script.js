@@ -62,3 +62,10 @@ function displayBooks() {
       });
     });
 }
+
+const newBookButton = document.querySelector("#new-book-button");
+const newBookModal = document.querySelector("#new-book-modal");
+
+newBookButton.addEventListener("click", () => {
+  newBookModal.showModal();
+});
