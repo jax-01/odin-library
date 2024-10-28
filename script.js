@@ -18,4 +18,18 @@ function addBookToLibrary(title, author, pages, readStatus) {
 // displaying books from storage
 function displayBooks() {
   const container = document.querySelector(".books-container");
+
+    // for each element inside myLibrary create a book display
+    myLibrary.forEach((book, index) => {
+      const bookElement = document.createElement("div");
+      // add class for design
+      bookElement.classList.add("book-element");
+  
+      const title = document.createElement("p");
+      const author = document.createElement("p");
+      const pages = document.createElement("p");
+      const readStatus = document.createElement("p");
+      const changeStatusButton = document.createElement("button");
+      const deleteBookButton = document.createElement("button");
+    });
 }
