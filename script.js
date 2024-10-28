@@ -17,5 +17,5 @@ function addBookToLibrary(title, author, pages, readStatus) {
 
 // displaying books from storage
 function displayBooks() {
-
+  const container = document.querySelector(".books-container");
 }
