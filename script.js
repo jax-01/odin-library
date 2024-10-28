@@ -46,5 +46,15 @@ function displayBooks() {
       bookElement.appendChild(changeStatusButton);
       bookElement.appendChild(deleteBookButton);
       booksContainer.appendChild(bookElement);
+
+      changeStatusButton.addEventListener("click", () => {
+        if (book.readStatus) {
+          book.readStatus = false;
+          readStatus.textContent = "Status: Not read yet";
+        } else {
+          book.readStatus = true;
+          readStatus.textContent = "Status: Read";
+        }
+      });
     });
 }
