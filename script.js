@@ -56,5 +56,9 @@ function displayBooks() {
           readStatus.textContent = "Status: Read";
         }
       });
+
+      deleteBookButton.addEventListener("click", () => {
+        bookElement.remove();
+      });
     });
 }
