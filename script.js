@@ -31,5 +31,12 @@ function displayBooks() {
       const readStatus = document.createElement("p");
       const changeStatusButton = document.createElement("button");
       const deleteBookButton = document.createElement("button");
+
+      title.textContent = "Title: " + book.title;
+      author.textContent = "Author: " + book.author;
+      pages.textContent = "Pages: " + book.pages;
+      readStatus.textContent = "Status: " + `${book.readStatus ? "Read" : "Not read yet"}`;
+      changeStatusButton.textContent = "Change Status";
+      deleteBookButton.textContent = "Delete Book";
     });
 }
