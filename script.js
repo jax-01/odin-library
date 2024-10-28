@@ -65,7 +65,12 @@ function displayBooks() {
 
 const newBookButton = document.querySelector("#new-book-button");
 const newBookModal = document.querySelector("#new-book-modal");
+const cancelButton = document.querySelector("#cancel");
 
 newBookButton.addEventListener("click", () => {
   newBookModal.showModal();
+});
+
+cancelButton.addEventListener("click", () => {
+  newBookModal.close();
 });
