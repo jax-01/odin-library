@@ -65,14 +65,26 @@ function displayBooks() {
     });
 }
 
+const bookTitle = document.querySelector("#book-title-input");
+const bookAuthor = document.querySelector("#book-author-input");
+const bookPages = document.querySelector("#book-pages-input");
+const readStatusInput = document.querySelector("#read-status-input");
 const newBookButton = document.querySelector("#new-book-button");
 const newBookModal = document.querySelector("#new-book-modal");
+const addBookButton = document.querySelector("#add-book");
 const cancelButton = document.querySelector("#cancel");
 
 newBookButton.addEventListener("click", () => {
   newBookModal.showModal();
 });
 
-cancelButton.addEventListener("click", () => {
+addBookButton.addEventListener("click", (event) => {
+  event.preventDefault(); // prevent the form from being submitted
+  newBookModal.close(addBookToLibrary(bookTitle.value, bookAuthor.value, bookPages.value, readStatusInput.checked));
+  displayBooks();
+  console.log(myLibrary);
+});
+
+cancelButton.addEventListener("click", (event) => {
   newBookModal.close();
 });
