@@ -1,6 +1,8 @@
 // storage for books
 const myLibrary = [];
 
+const booksContainer = document.querySelector(".books-container");
+
 // constructor function for books
 function Book(title, author, pages, readStatus) {
   this.title = title;
@@ -17,8 +19,8 @@ function addBookToLibrary(title, author, pages, readStatus) {
 
 // displaying books from storage
 function displayBooks() {
-  const booksContainer = document.querySelector(".books-container");
-
+    // clear the book container first
+    booksContainer.innerHTML = '';
     // for each element inside myLibrary create a book display
     myLibrary.forEach((book, index) => {
       const bookElement = document.createElement("div");
@@ -52,7 +54,7 @@ function displayBooks() {
       deleteBookButton.addEventListener("click", () => {
         bookElement.remove();
         myLibrary.splice(index, 1);
-        // displayBooks();
+        displayBooks();
       });
 
       bookElement.appendChild(title);
