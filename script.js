@@ -50,8 +50,9 @@ function displayBooks() {
       });
 
       deleteBookButton.addEventListener("click", () => {
+        bookElement.remove();
         myLibrary.splice(index, 1);
-        displayBooks();
+        // displayBooks();
       });
 
       bookElement.appendChild(title);
