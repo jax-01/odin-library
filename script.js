@@ -39,14 +39,6 @@ function displayBooks() {
       changeStatusButton.textContent = "Change Status";
       deleteBookButton.textContent = "Delete Book";
 
-      bookElement.appendChild(title);
-      bookElement.appendChild(author);
-      bookElement.appendChild(pages);
-      bookElement.appendChild(readStatus);
-      bookElement.appendChild(changeStatusButton);
-      bookElement.appendChild(deleteBookButton);
-      booksContainer.appendChild(bookElement);
-
       changeStatusButton.addEventListener("click", () => {
         if (book.readStatus) {
           book.readStatus = false;
@@ -58,8 +50,17 @@ function displayBooks() {
       });
 
       deleteBookButton.addEventListener("click", () => {
-        bookElement.remove();
+        myLibrary.splice(index, 1);
+        displayBooks();
       });
+
+      bookElement.appendChild(title);
+      bookElement.appendChild(author);
+      bookElement.appendChild(pages);
+      bookElement.appendChild(readStatus);
+      bookElement.appendChild(changeStatusButton);
+      bookElement.appendChild(deleteBookButton);
+      booksContainer.appendChild(bookElement);
     });
 }
 
