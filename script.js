@@ -86,5 +86,6 @@ addBookButton.addEventListener("click", (event) => {
 });
 
 cancelButton.addEventListener("click", (event) => {
+  event.preventDefault();
   newBookModal.close();
 });
