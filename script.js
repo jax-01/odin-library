@@ -84,7 +84,6 @@ addBookButton.addEventListener("click", (event) => {
   event.preventDefault(); // prevent the form from being submitted
   newBookModal.close(addBookToLibrary(bookTitle.value, bookAuthor.value, bookPages.value, readStatusInput.checked));
   displayBooks();
-  console.log(myLibrary);
 });
 
 cancelButton.addEventListener("click", (event) => {
