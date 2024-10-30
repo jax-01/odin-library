@@ -167,3 +167,7 @@ span {
   gap: 1rem;
   padding: 1rem;
 }
+
+.book-element-texts > p {
+  margin-bottom: 0.5rem;
+}
