@@ -140,6 +140,10 @@ span {
   margin-bottom: 1rem;
 }
 
+#new-book-modal > form > div > label {
+  font-weight: 500;
+}
+
 .button-container-smaller {
   display: flex;
   gap: 0.75rem;
