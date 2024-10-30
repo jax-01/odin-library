@@ -121,3 +121,31 @@ span {
   background-color: var(--button-hover-color);
   border-color: var(--button-hover-color);
 }
+
+#new-book-modal {
+  border-radius: 0.75rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 1.5rem;
+}
+
+#new-book-modal .form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+#new-book-modal > form > div > input {
+  margin-bottom: 1rem;
+}
+
+#new-book-modal > form > div > label {
+  font-weight: 500;
+}
+
+.button-container-smaller {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0;
+}
