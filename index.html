@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=book_2" />
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
   <title>Odin Library</title>
 </head>
 <body>
@@ -25,9 +26,33 @@
     </div>
   </nav>
   <div class="button-container">
-    <button>New Book</button>
+    <button id="new-book-button">New Book</button>
   </div>
-  <div class="card-container">
+  <dialog id="new-book-modal">
+    <form>
+      <div class="form-row">
+        <label for="book-title-input">Book title</label>
+        <input type="text" name="book-title-input" id="book-title-input" required>
+      </div>
+      <div class="form-row">
+        <label for="book-author-input">Book author</label>
+        <input type="text" name="book-author-input" id="book-author-input" required>
+      </div>
+      <div class="form-row">
+        <label for="book-pages-input">Number of pages</label>
+        <input type="number" name="book-pages-input" id="book-pages-input" min="1" required>
+      </div>
+      <fieldset>
+        <label for="read-status-input">Read</label>
+        <input type="checkbox" name="read-status-input" id="read-status-input">
+      </fieldset>
+      <div class="form-row button-container">
+        <button type="submit" id="add-book" value="default">Add book</button>
+        <button type="submit" id="cancel">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+  <div class="books-container">
 
   </div>
 </body>
