@@ -171,6 +171,7 @@ span {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  background-color: var(--book-element-background-color);
 }
 
 .book-element-texts > p {
