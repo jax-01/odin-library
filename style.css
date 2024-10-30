@@ -47,7 +47,7 @@ ul {
   --button-hover-color: rgb(12, 90, 84);
   --bottom-border-color: rgb(31 41 55);
 
-  --book-element-button-color: rgba(31, 41, 55, 0);
+  --book-element-button-color: transparent;
   --book-element-background-color: rgb(31 41 55);
   --border-radius: 0.5rem;
 
@@ -183,4 +183,11 @@ span {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.book-element-buttons > button {
+  color: var(--text-color);
+  border: 1px solid white;
+  border-radius: var(--border-radius);
+  background-color: var(--book-element-button-color);
 }
