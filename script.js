@@ -69,12 +69,8 @@ function displayBooks() {
         displayBooks();
       });
 
-      bookElement.appendChild(title);
-      bookElement.appendChild(author);
-      bookElement.appendChild(pages);
-      bookElement.appendChild(readStatus);
-      bookElement.appendChild(changeStatusButton);
-      bookElement.appendChild(deleteBookButton);
+      bookElement.appendChild(bookElementTexts);
+      bookElement.appendChild(bookElementButtons);
       booksContainer.appendChild(bookElement);
     });
 }
