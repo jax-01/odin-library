@@ -172,6 +172,7 @@ span {
   gap: 1rem;
   padding: 1rem;
   background-color: var(--book-element-background-color);
+  border-radius: var(--border-radius);
 }
 
 .book-element-texts > p {
