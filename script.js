@@ -33,6 +33,11 @@ function displayBooks() {
       const readStatus = document.createElement("p");
       const changeStatusButton = document.createElement("button");
       const deleteBookButton = document.createElement("button");
+      const bookElementTexts = document.createElement("div");
+      const bookElementButtons = document.createElement("div");
+
+      bookElementTexts.classList.add("book-element-texts");
+      bookElementButtons.classList.add("book-element-buttons");
 
       title.textContent = "Title: " + book.title;
       author.textContent = "Author: " + book.author;
