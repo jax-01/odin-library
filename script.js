@@ -39,6 +39,13 @@ function displayBooks() {
       bookElementTexts.classList.add("book-element-texts");
       bookElementButtons.classList.add("book-element-buttons");
 
+      bookElementTexts.appendChild(title);
+      bookElementTexts.appendChild(author);
+      bookElementTexts.appendChild(pages);
+      bookElementTexts.appendChild(readStatus);
+      bookElementButtons.appendChild(changeStatusButton);
+      bookElementButtons.appendChild(deleteBookButton);
+
       title.textContent = "Title: " + book.title;
       author.textContent = "Author: " + book.author;
       pages.textContent = "Pages: " + book.pages;
