@@ -171,3 +171,9 @@ span {
 .book-element-texts > p {
   margin-bottom: 0.5rem;
 }
+
+.book-element-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
