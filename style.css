@@ -177,6 +177,10 @@ span {
   border-radius: var(--border-radius);
 }
 
+.book-element-texts {
+  margin-bottom: auto;
+}
+
 .book-element-texts > p {
   margin-bottom: 0.5rem;
 }
