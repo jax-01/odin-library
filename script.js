@@ -33,6 +33,18 @@ function displayBooks() {
       const readStatus = document.createElement("p");
       const changeStatusButton = document.createElement("button");
       const deleteBookButton = document.createElement("button");
+      const bookElementTexts = document.createElement("div");
+      const bookElementButtons = document.createElement("div");
+
+      bookElementTexts.classList.add("book-element-texts");
+      bookElementButtons.classList.add("book-element-buttons");
+
+      bookElementTexts.appendChild(title);
+      bookElementTexts.appendChild(author);
+      bookElementTexts.appendChild(pages);
+      bookElementTexts.appendChild(readStatus);
+      bookElementButtons.appendChild(changeStatusButton);
+      bookElementButtons.appendChild(deleteBookButton);
 
       title.textContent = "Title: " + book.title;
       author.textContent = "Author: " + book.author;
@@ -57,12 +69,8 @@ function displayBooks() {
         displayBooks();
       });
 
-      bookElement.appendChild(title);
-      bookElement.appendChild(author);
-      bookElement.appendChild(pages);
-      bookElement.appendChild(readStatus);
-      bookElement.appendChild(changeStatusButton);
-      bookElement.appendChild(deleteBookButton);
+      bookElement.appendChild(bookElementTexts);
+      bookElement.appendChild(bookElementButtons);
       booksContainer.appendChild(bookElement);
     });
 }
