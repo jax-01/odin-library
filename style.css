@@ -122,6 +122,8 @@ span {
   border-color: var(--button-hover-color);
 }
 
+/* Modal */
+
 #new-book-modal {
   border-radius: 0.75rem;
   position: absolute;
@@ -148,4 +150,10 @@ span {
   display: flex;
   gap: 0.75rem;
   margin: 0;
+}
+
+/* Books display */
+
+.books-container {
+  margin: 0 20%;
 }
